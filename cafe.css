@@ -83,7 +83,7 @@ header a {
 
 #welcome .overlay .left {
   width: 80%;
-  height: calc(98vh - 3em);
+  height: calc(98vh - 5em);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,7 +112,7 @@ header a {
   z-index: 3;
   width: 3em;
   height: 1.5em;
-  bottom: -1em;
+  bottom: 1em;
   left: calc(50% - 3em / 2);
   animation: arrow infinite ease-in-out 1s;
 }
@@ -140,7 +140,7 @@ header a {
 
   #welcome .overlay .left {
     width: 70%;
-    height: calc(98vh - 4.5em);
+    height: calc(98vh - 6em);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,7 +159,7 @@ header a {
   .img-arrow {
     width: 4em;
     height: 2em;
-    bottom: -1em;
+    bottom: 2em;
     left: calc(50% - 6em / 2);
   }
 }
@@ -171,7 +171,7 @@ header a {
 
   #welcome .overlay .left {
     width: 80%;
-    height: calc(98vh - 7em);
+    height: calc(98vh - 6em);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -198,7 +198,7 @@ header a {
   .img-arrow {
     width: 6em;
     height: 3em;
-    bottom: -2em;
+    bottom: 2em;
     left: calc(50% - 6em / 2);
   }
 }
