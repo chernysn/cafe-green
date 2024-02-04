@@ -82,11 +82,11 @@ header a {
 
 #welcome .overlay .left {
   width: 80%;
-  height: calc(98vh - 3.5em);
+  height: calc(98vh - 4.5em);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 0 0 0 2em;
   box-sizing: border-box;
 }
@@ -119,7 +119,7 @@ header a {
 
   #welcome .overlay .left {
     width: 70%;
-    height: calc(98vh - 3.5em);
+    height: calc(98vh - 4.5em);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,26 +128,27 @@ header a {
   }
 
   #welcome .overlay .left h1 {
-    font-size: calc(8em + 2vw);
+    font-size: calc(5em + 2vw);
   }
   #welcome .overlay .left p {
-    font-size: calc(1.8em + 1vw);
+    font-size: calc(1.3em + 1vw);
   }
 }
 
 @media screen and (min-width: 1000px) {
   header {
-    font-size: 1.5em;
+    font-size: 1.3em;
   }
 
   #welcome .overlay .left {
     width: 70%;
-    height: calc(98vh - 3.5em);
+    height: calc(98vh - 5em);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 0 0 0 4em;
+    margin: 0em 0;
   }
 
   #welcome .overlay .left h1 {
