@@ -55,20 +55,40 @@
 
       <script>
         const menuContainer = document.getElementById('scroll-menu');
+
         menu.forEach(menuItem => {
-          menuContainer.innerHTML += `
-                              <div class="menu-item-wrapper"> 
-                                 <div class="menu-item">
-                                    <div class="blob" style="background-image: url('${menuItem.image}')"></div>
-                                  </div>
-                                  <div class="blob-caption">
-                                  <div>${menuItem.description}</div> 
-                                  <div>Price: $${menuItem.price}</div>
-                                  <button onclick="addToCart(${menuItem.id})">Add to Cart</button>
-                                  </div>
-                              </div>
-                              
-                            `;
+          const menuWrapper = document.createElement('div');
+          menuWrapper.classList.add('menu-item-wrapper');
+
+          const menuDiv = document.createElement('div');
+          menuDiv.classList.add('menu-item');
+
+          const blobDiv = document.createElement('div');
+          blobDiv.classList.add('blob');
+          blobDiv.style.backgroundImage = `url('${menuItem.image}')`;
+
+          menuDiv.appendChild(blobDiv);
+
+          const blobCaptionDiv = document.createElement('div');
+          blobCaptionDiv.classList.add('blob-caption');
+
+          const descriptionDiv = document.createElement('div');
+          descriptionDiv.textContent = menuItem.description;
+          blobCaptionDiv.appendChild(descriptionDiv);
+
+          const priceDiv = document.createElement('div');
+          priceDiv.textContent = `Price: $${menuItem.price}`;
+          blobCaptionDiv.appendChild(priceDiv);
+
+          const button = document.createElement('button');
+          button.textContent = 'Add to Cart';
+          button.onclick = () => addToCart(menuItem.id);
+          blobCaptionDiv.appendChild(button);
+
+          menuWrapper.appendChild(menuDiv);
+          menuWrapper.appendChild(blobCaptionDiv);
+
+          menuContainer.appendChild(menuWrapper);
         });
 
 
