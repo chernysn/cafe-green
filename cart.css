@@ -6,7 +6,6 @@
   background-position: center;
   background-size: cover;
   padding: 0 0 1em 0;
-  font-size: 1.2em;
 }
 
 .main-cart .overlay {
@@ -17,6 +16,7 @@
   border-radius: 1em;
   margin: 1em auto;
   box-sizing: border-box;
+  font-size: 1.2em;
 }
 
 #cart table {
