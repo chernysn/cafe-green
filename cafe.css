@@ -79,11 +79,13 @@ header a {
   display: block;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 0 0 2em 0;
+  position: relative;
 }
 
 #welcome .overlay .left {
   width: 80%;
-  height: calc(98vh - 5em);
+  height: auto;
+  min-height: calc(98vh - 5em);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,7 +114,7 @@ header a {
   z-index: 3;
   width: 3em;
   height: 1.5em;
-  bottom: 1em;
+  bottom: 2em;
   left: calc(50% - 3em / 2);
   animation: arrow infinite ease-in-out 1s;
 }
@@ -140,7 +142,8 @@ header a {
 
   #welcome .overlay .left {
     width: 70%;
-    height: calc(98vh - 6em);
+    height: auto;
+    min-height: calc(98vh - 6em);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,7 +162,7 @@ header a {
   .img-arrow {
     width: 4em;
     height: 2em;
-    bottom: 2em;
+    bottom: 3em;
     left: calc(50% - 6em / 2);
   }
 }
