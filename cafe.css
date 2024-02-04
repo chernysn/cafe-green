@@ -78,6 +78,7 @@ header a {
   height: auto;
   display: block;
   background-color: rgba(0, 0, 0, 0.3);
+  padding: 0 0 2em 0;
 }
 
 #welcome .overlay .left {
@@ -87,8 +88,8 @@ header a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 0 0 2em;
   box-sizing: border-box;
+  padding: 0 0 0 2em;
 }
 
 #welcome .overlay .left h1 {
@@ -111,7 +112,7 @@ header a {
   z-index: 3;
   width: 3em;
   height: 1.5em;
-  bottom: 1.5em;
+  bottom: -1em;
   left: calc(50% - 3em / 2);
   animation: arrow infinite ease-in-out 1s;
 }
@@ -152,12 +153,13 @@ header a {
   }
   #welcome .overlay .left p {
     font-size: calc(1.3em + 1vw);
+    padding: 0 0 0em 0;
   }
 
   .img-arrow {
-    width: 6em;
-    height: 3em;
-    bottom: 2em;
+    width: 4em;
+    height: 2em;
+    bottom: -1em;
     left: calc(50% - 6em / 2);
   }
 }
@@ -168,21 +170,20 @@ header a {
   }
 
   #welcome .overlay .left {
-    width: 70%;
-    height: calc(98vh - 4em);
+    width: 80%;
+    height: calc(98vh - 7em);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     padding: 0 0 0 4em;
-    margin: 0em 0;
   }
 
   #welcome .overlay .left h1 {
-    font-size: calc(8em + 2vw);
+    font-size: calc(8em + 2%);
   }
   #welcome .overlay .left p {
-    font-size: calc(1em + 1vw);
+    font-size: calc(1.5em + 1%);
   }
 
   .img-arrow {
@@ -197,7 +198,7 @@ header a {
   .img-arrow {
     width: 6em;
     height: 3em;
-    bottom: 3em;
+    bottom: -2em;
     left: calc(50% - 6em / 2);
   }
 }
