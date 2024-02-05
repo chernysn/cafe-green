@@ -289,7 +289,7 @@ header a {
   #menu .scroll {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 1em;
+    padding: 0 1em;
   }
 
   .menu-item {
@@ -308,13 +308,13 @@ header a {
   #menu .scroll {
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 calc((100% - (12em * 5)) / 10);
+    padding: 0 1em;
   }
 
   .menu-item {
     width: 12em;
     height: 12em;
-    margin: 0 1em;
+    margin: 0 0.5em;
   }
 
   .blob {
@@ -396,7 +396,7 @@ header a {
 
 @media screen and (min-width: 600px) {
   .overlay_people .scroll {
-    width: 100%;
+    width: 98%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -527,16 +527,23 @@ iframe {
 
   .location .overlay-location .left,
   .location .overlay-location .right {
-    width: 49%;
     height: auto;
     margin: 0;
     padding: 0.5em 2em;
   }
 
+  .location .overlay-location .left {
+    width: 60%;
+  }
+
+  .location .overlay-location .right {
+    width: 40%;
+  }
+
   .location .overlay-location .left .contacts,
   .location .overlay-location .left .hours {
     width: 50%;
-    padding: 2em;
+    padding: 2em 1em;
   }
 }
 
